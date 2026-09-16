@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Time Walker Support</title>
+<style>
+  :root {
+    --navy: #14304d;
+    --slate: #5b7690;
+    --bg: #f5f7fa;
+    --card: #ffffff;
+    --text: #1c2733;
+    --muted: #5b6b7a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    padding: 48px 20px;
+  }
+  .wrap { max-width: 640px; width: 100%; }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+  .logo-mark {
+    width: 40px; height: 40px;
+    flex-shrink: 0;
+  }
+  .logo-mark img { width: 100%; height: 100%; display: block; }
+  .logo-text { font-size: 20px; font-weight: 700; letter-spacing: -0.02em; }
+  .logo-text span { color: var(--slate); font-weight: 400; }
+  h1 { font-size: 28px; margin: 0 0 8px; letter-spacing: -0.02em; }
+  .sub { color: var(--muted); font-size: 16px; margin-bottom: 32px; }
+  .card {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 1px 3px rgba(20,48,77,0.08), 0 1px 2px rgba(20,48,77,0.04);
+    margin-bottom: 20px;
+  }
+  .card h2 { font-size: 18px; margin: 0 0 12px; }
+  .card p { color: var(--muted); line-height: 1.6; margin: 0 0 12px; }
+  .card p:last-child { margin-bottom: 0; }
+  a.email {
+    display: inline-block;
+    color: var(--navy);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid var(--navy);
+  }
+  .apps { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 8px; }
+  .app-badge {
+    background: var(--bg);
+    border-radius: 10px;
+    padding: 14px 16px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .app-badge span { display: block; font-weight: 400; color: var(--muted); font-size: 13px; margin-top: 2px; }
+  footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 40px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="logo">
+      <div class="logo-mark"><img src="logo.png" alt="Time Walker"></div>
+      <div class="logo-text">TIME<span>WALKER</span></div>
+    </div>
+
+    <h1>Support</h1>
+    <p class="sub">We're here to help with TimeWalker Crew and TimeWalker Manager.</p>
+
+    <div class="card">
+      <h2>Contact us</h2>
+      <p>For account access, technical issues, or general questions about the app, reach out by email and our team will get back to you.</p>
+      <a class="email" href="mailto:lethea.az@gmail.com">lethea.az@gmail.com</a>
+    </div>
+
+    <div class="card">
+      <h2>Common questions</h2>
+      <p><strong>I can't sign in.</strong> Your account is created by your restaurant manager. If you don't have login details, ask your manager, or contact us at the email above.</p>
+      <p><strong>My check-in/check-out QR code isn't working.</strong> Make sure your device has an active internet connection and the code hasn't expired (codes are valid for 30 seconds). Generate a new code and try again.</p>
+      <p><strong>My hours or payroll look incorrect.</strong> Contact your restaurant manager first, since shift records are managed on their end. If the issue persists, email us.</p>
+    </div>
+
+    <div class="card">
+      <h2>Apps</h2>
+      <div class="apps">
+        <div class="app-badge">TimeWalker Crew<span>For team members</span></div>
+        <div class="app-badge">TimeWalker Manager<span>For restaurant managers</span></div>
+      </div>
+    </div>
+
+    <footer>© 2026 Time Walker. All rights reserved.</footer>
+  </div>
+</body>
+</html>
